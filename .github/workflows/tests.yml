@@ -24,6 +24,7 @@ jobs:
         git clone https://github.com/jagmeet640/sql-fast-api-actions.git
         pwd 
         cd sql-fast-api-actions
+        pip install requests
         pip install -r requirements.txt
 
     - name: Run tests
