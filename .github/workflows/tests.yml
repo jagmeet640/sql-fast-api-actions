@@ -21,9 +21,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        git clone https://github.com/jagmeet640/github-actions-trial.git
+        git clone https://github.com/jagmeet640/sql-fast-api-actions.git
         pwd 
-        cd github-actions-trial
+        cd sql-fast-api-actions
         pip install -r requirements.txt
 
     - name: Run tests
