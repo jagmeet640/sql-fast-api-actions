@@ -12,7 +12,7 @@ def test_get_students():
 
 def test_create_student():
     # Send a POST request to create a student
-    response = requests.post("http://127.0.0.1:8000/students/", json={"name": "test", "age": 21, "marks": 95, "rollId":22})
+    response = requests.post("http://127.0.0.1:8000/students/", json={"name": "test", "age": 21, "marks": 95, "rollId":4})
     print(response.json())
     assert response.status_code == 200
 
