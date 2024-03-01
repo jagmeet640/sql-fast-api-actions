@@ -27,7 +27,7 @@ def create_student(student: Student):
             sql = "INSERT INTO students (name, age, marks, rollId) VALUES (%s, %s, %s, %s)"
             cursor.execute(sql, (student.name, student.age, student.marks, student.rollId))
             print(cursor)
-            connection.commit()
+            connection.commi()
         return student
     except Exception as e:
         raise HTTPException(status_code=500, detail="Internal Server Error")
